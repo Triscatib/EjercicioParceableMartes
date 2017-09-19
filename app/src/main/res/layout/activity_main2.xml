@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.ejercicioparceablemartes.Main2Activity">
+
+    <EditText
+        android:id="@+id/edtCalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="calle"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtCalle"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:ems="10"
+        android:hint="numero"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtcp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNumero"
+        android:layout_alignStart="@+id/editNumero"
+        android:layout_below="@+id/editNumero"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="codigo post."
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editNumero"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/edtCalle"
+        android:layout_toStartOf="@+id/edtCalle"
+        android:text="Calle" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtcp"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:text="Numero" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtcp"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:text="CP" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtcp"
+        android:layout_marginTop="107dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:text="Fin" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtcp"
+        android:layout_alignRight="@+id/edtcp"
+        android:layout_alignTop="@+id/btnSalir"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:text="Volver" />
+
+    <TextView
+        android:id="@+id/textViewInforme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="TextView"
+        android:layout_below="@+id/btnSalir"
+        android:layout_alignLeft="@+id/edtcp"
+        android:layout_alignStart="@+id/edtcp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="localidad"
+        android:layout_alignBaseline="@+id/edtLocalidad"
+        android:layout_alignBottom="@+id/edtLocalidad"
+        android:layout_toLeftOf="@+id/btnSalir"
+        android:layout_toStartOf="@+id/btnSalir" />
+
+    <EditText
+        android:id="@+id/edtLocalidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtcp"
+        android:layout_alignStart="@+id/edtcp"
+        android:layout_below="@+id/edtcp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="localidad"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/sigue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewInforme"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/btnSalir"
+        android:layout_toRightOf="@+id/btnSalir"
+        android:text="Siguiente" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewInforme"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textViewInforme"
+        android:layout_marginBottom="34dp"
+        android:text="TextView" />
+</RelativeLayout>
